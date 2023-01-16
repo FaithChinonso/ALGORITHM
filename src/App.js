@@ -52,6 +52,16 @@ function App() {
     return total;
   }
   //always takes up the same space no matter the length of the array because only two variables( (total, i are numbers) and no matter how big the number gets, the space still remains the same) are defined throughout and no new variables are created due to the size of the array
+  //O(1) space that means we have constant space no matter the size of your array
+  function double(arr) {
+    const newArr = [];
+
+    for (let i = 0; i < arr.length; i++) {
+      newArr.push(2 * arr[i]);
+    }
+    return newArr;
+  }
+  //O(n + 2)space means it increases with the length of the array
   return <div className="App">App</div>;
 }
 
