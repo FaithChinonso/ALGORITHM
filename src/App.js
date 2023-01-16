@@ -28,10 +28,10 @@ function App() {
 
   function countUpAndDown(n) {
     console.log(" Going Up!!");
-    for (let i = 1; 1 <= n; i++) {
+    for (let i = 0; 1 < n; i++) {
       console.log(i);
     }
-    console.log(" Going Down!!");
+    console.log("At the Top, Going Down!!");
     for (let j = n - 1; j >= 0; j--) {
       console.log(j);
     }
@@ -44,6 +44,14 @@ function App() {
       }
     }
   }
+  function addUpp(arr) {
+    let total = 0;
+    for (let i = 1; 1 < arr.length; i++) {
+      total += arr[i];
+    }
+    return total;
+  }
+  //always takes up the same space no matter the length of the array because only two variables( (total, i are numbers) and no matter how big the number gets, the space still remains the same) are defined throughout and no new variables are created due to the size of the array
   return <div className="App">App</div>;
 }
 
